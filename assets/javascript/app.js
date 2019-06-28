@@ -40,48 +40,46 @@ var questionFive = {
 $("#start").click(function(){
     $("#start").remove();
 
-    $("#ZM").append("<h2>" + questionOne.question + "</h2>");
-    
-    for(var j=0 ;  j < questionOne.answers.length ; j++){
-    $("#ZM").append("<p>" + questionOne.answers[j] + "</p>");
-    }
+    var timer = setInterval(1);
+    $("#ZM").prepend("<h2> Time Reamaning : " + timer  + "</h2>")
 
+    $("#ZM").append("<h2>" + questionOne.question + "</h2>");
+        for(var j=0 ;  j < questionOne.answers.length ; j++){
+        $("#ZM").append("<p> <input type='radio'  " + questionOne.answers[j] + "  >  " + questionOne.answers[j] + "</p>" );
+        };
 
 
 
     $("#ZM").append("<h2>" + questionTwo.question + "</h2>");
-    for(var j=0 ;  j < questionTwo.answers.length ; j++){
-        $("#ZM").append("<p>" + questionTwo.answers[j] + "</p>");
-        }
+        for(var j=0 ;  j < questionTwo.answers.length ; j++){
+            $("#ZM").append("<p> <input type='radio'  " + questionTwo.answers[j] + "  >  " + questionTwo.answers[j] + "</p>" );   
+        };
     
-
-
 
 
 
     $("#ZM").append("<h2>" + questionThree.question + "</h2>");
 
-    for(var j=0 ;  j < questionThree.answers.length ; j++){
-        $("#ZM").append("<p>" + questionThree.answers[j] + "</p>");
-        }
+        for(var j=0 ;  j < questionThree.answers.length ; j++){
+            $("#ZM").append("<p> <input type='radio'  " + questionThree.answers[j] + "  >  " + questionThree.answers[j] + "</p>" );
+        };
     
 
 
 
     $("#ZM").append("<h2>" + questionFour.question + "</h2>");
 
-    for(var j=0 ;  j < questionFour.answers.length ; j++){
-        $("#ZM").append("<p>" + questionFour.answers[j] + "</p>");
-        }
+        for(var j=0 ;  j < questionFour.answers.length ; j++){
+            $("#ZM").append("<p> <input type='radio'  " + questionFour.answers[j] + "  >  " + questionFour.answers[j] + "</p>" );
+        };
+
+
+        $("#ZM").append("<h2>" + questionFive.question + "</h2>");
+
+        for(var j=0 ;  j < questionFive.answers.length ; j++){
+            $("#ZM").append("<p> <input type='radio'  " + questionFive.answers[j] + "  >  " + questionFive.answers[j] + "</p>" );
+        };
     
-
-
-    $("#ZM").append("<h2>" + questionFive.question + "</h2>");
-
-    for(var j=0 ;  j < questionFive.answers.length ; j++){
-        $("#ZM").append("<p>" + questionFive.answers[j] + "</p>");
-        }
     
-
 
 });
